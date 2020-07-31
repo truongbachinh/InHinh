@@ -10,7 +10,8 @@ public class JavaWrapper {
 		int a2 = Integer.parseInt(str2);
 		System.out.println(a2);
 		String b = "123421";
-		int c = Integer.parseInt(b);
+		Integer.parseInt(b);
+		System.out.println("Heello");
 				
 		
 	}
