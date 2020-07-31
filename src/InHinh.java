@@ -39,24 +39,25 @@ public class InHinh {
 	    }
 	    public void InHinhTamGiacSo() 
 	    {
-	    	Scanner sc = new Scanner(System.in);
-	    	System.out.print("Mời bạn nhập chiều cao của hình tam giác");
-	    	
-	    	int height = sc.nextInt();
-	    	for (int i1 = 1; i1 <= height; i1++)
-	    	{
-	    		for(int i2 = 1 ; i2 <= height - i1; i2++)
-	    		{
-	    			System.out.print("  ");
-	    		}
-	    		for(int i3 = 1; i3 <= 2 * i1 - 1; i3++)
-	    		{
-	    			
-	    			System.out.print(" "+ i3);
-	    		
-	    		}
-	    		System.out.println();
-	    	}
+	    	try (Scanner sc = new Scanner(System.in)) {
+				System.out.print("Mời bạn nhập chiều cao của hình tam giác");
+				
+				int height = sc.nextInt();
+				for (int i1 = 1; i1 <= height; i1++)
+				{
+					for(int i2 = 1 ; i2 <= height - i1; i2++)
+					{
+						System.out.print("  ");
+					}
+					for(int i3 = 1; i3 <= 2 * i1 - 1; i3++)
+					{
+						
+						System.out.print(" "+ i3);
+					
+					}
+					System.out.println();
+				}
+			}
 	    }
 	    	
 	 }
